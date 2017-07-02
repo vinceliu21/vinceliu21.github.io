@@ -37,6 +37,16 @@ a{
     text-decoration: none;
 }
 
+.myLogo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 230px;
+    max-height: 95px;
+    width: auto;
+    height: auto;
+}
+
 .logo{
     width: 35%;
     text-align: center;
