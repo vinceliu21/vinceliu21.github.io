@@ -31,7 +31,7 @@ body{
     vertical-align: center;
     background: #eee;
     /*background-color: #000000;*/
-    background-image: url("banner.jpg");
+    /*background-image: url("banner.jpg");*/
 }
 a{
     text-decoration: none;
