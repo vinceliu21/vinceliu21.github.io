@@ -369,7 +369,7 @@ a:focus,
 ------------------------*/
 
 .jumbotron {
-    background: url(../assets/cv.jpg) no-repeat center center fixed;
+    background: url(../assets/cv.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
     top: +0px;
