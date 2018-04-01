@@ -369,12 +369,12 @@ a:focus,
 ------------------------*/
 
 .jumbotron {
-    background: url(../assets/background.jpg) no-repeat center center fixed;
+    background: url(../assets/cv.jpg) no-repeat center center fixed;
     background-size: 100% 100%;
     position: relative;
-    top: +50px;
-    /*max-width: 100%;
-    max-height: 100%;*/
+    top: +0px;
+    max-width: 100%;
+    max-height: 100%;
     color:#fff;
     padding:0;
     margin-bottom:0;
