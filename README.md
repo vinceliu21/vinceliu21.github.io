@@ -1,3 +1,1 @@
-# vinceliu21.github.io
-
-Personal website
+# personal-site

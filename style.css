@@ -1,0 +1,603 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Nunito Sans', sans-serif;
+  /* margin: 0px; */
+  /* background-color:gray; */
+}
+
+/* a:hover{
+  opacity: 1;
+} */
+
+/* SIDENAV STYLING */
+
+.sidenav{
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  overflow-x: hidden;
+  padding-top: 200px;
+}
+
+@media screen and (max-width: 1024px){
+  .sidenav{
+    display: none;
+  }
+}
+
+.side-bio{
+  display: block;
+}
+
+.side-bio ul {
+  list-style: none;
+}
+
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 22px;
+  color:black;
+  display: block;
+}
+
+.sidenav nav a:hover {
+  /* opacity: 0.4; */
+  color: #f1f1f1;
+}
+
+.sidenav nav ul {
+  list-style: none;
+}
+
+.sidenav nav ul li a {
+  display: block;
+  padding: 2px;
+}
+
+.sidenav nav ul li a.current {
+  opacity:0.4;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* MAIN SECTION STYLING */
+.main {
+  margin-left: 200px;
+}
+
+@media screen and (max-width: 1025px){
+  .main{
+    margin: 0;
+  }
+}
+
+
+
+/* Hero Section Styling */
+
+.hero{ 
+  width: 100%;
+  /* height: 900px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-img{
+  width: 80%;
+  height: auto;
+  /* height:350px; */
+}
+
+.profile-img {
+  margin-top: 30px;
+  border-radius: 50%;
+  width: 192px;
+  height: 192px;
+}
+
+.profile-img-box {
+  /* margin-top: 30px; */
+  /* border-radius: 50%; */
+  width: 40%;
+  padding-top: 50px;
+  height: auto;
+  /* height: 192px; */
+}
+@media screen and (max-width: 1025px){
+  .profile-img-box{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px){
+  .profile-img-box{
+    width: 100%;
+  }
+}
+
+
+.social-icons{
+  /* margin-top: 30px; */
+  margin-left: 11px;
+  margin-bottom: 10px;
+}
+
+.hero-text{
+  width: 80%;
+}
+
+/* Style all font awesome icons */
+.fa {
+  /* padding: 5px; */
+  font-size: 30px;
+  /* margin: 0 auto; */
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  text-decoration: none;
+  /* border-radius: 50%; */
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  color: white;
+  background-color:gray;
+  opacity: 0.5;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  color: black;
+}
+
+.fa-instagram{
+  color: black;
+}
+.fa-envelope-o{
+  color: black;
+}
+
+.fa-github{
+  color: black;
+}
+/* Twitter */
+.fa-twitter {
+  /* color: #55ACEE; */
+  color: black;
+}
+
+/* Novels Section Styling */
+
+.novels{
+  text-align: center;
+  height: 900px;
+  /* width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; */
+}
+
+
+/* Timeline Section Styling */
+
+
+.card-title{
+  font-size: 24px;
+  font-weight: bold;
+}
+.card-date{
+  font-size: 14px;
+  opacity: 0.4;
+}
+
+.timeline-container{
+  text-align:center;
+  /* height: 900px; */
+}
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  /* background-color:#d3d3d3; */
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  /* border: 4px solid #d3d3d3; */
+  border:  4px solid red;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #d3d3d3;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #d3d3d3;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #d3d3d3;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #d3d3d3 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background: lightgray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* background-color: #d3d3d3; */
+  /* border: 1px solid black; */
+  position: relative;
+  text-align: left;
+  border-radius: 6px;
+}
+
+.content-date-left {
+  background: lightgray;
+  display: inline-block;
+  color: black;
+  padding: 10px;
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 0;
+  right: 0;
+}
+
+.content-date-right {
+  background: #FF4081;
+  display: inline-block;
+  color: #FFF;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: auto;
+  left: 0;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid  lightgray;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent  lightgray transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+/* Projects Section Styling */
+.projects{
+  text-align: center;
+  width: 85%;
+  margin: 0px auto;
+  /* height: 900px; */
+}
+
+.row {
+  /* margin: 8px -16px; */
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  /* padding: 8px; */
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.portfolio-content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.profile-link{
+  text-decoration: none;
+  opacity: 0.6;
+  color: black;
+
+}
+
+.profile-link:hover{
+  opacity: 0.2;
+}
+
+.portfolio-container{
+  position: relative;
+  /* width: 100%; */
+  /* height: auto; */
+  cursor: pointer;
+}
+.portfolio-container:hover .portfolio-image {
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.portfolio-text{
+  opacity: 0;
+}
+.portfolio-container:hover .portfolio-text{
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.portfolio-text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Modal Styling */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 25px; /* Location of the box */
+  padding-bottom: 25px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color:black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  /* background-color: #5cb85c; */
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  text-align: left;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+
+
+
+/* The Close Button */
+.close2 {
+  color:black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* The Close Button */
+.close3 {
+  color:black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close4 {
+  color:black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Footer Decoration */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
