@@ -211,6 +211,10 @@ body{
   font-size: 14px;
   opacity: 0.4;
 }
+.card-location{
+  font-size: 14px;
+  opacity: 0.4;
+}
 
 .timeline-container{
   text-align:center;
@@ -482,6 +486,12 @@ body{
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+@media screen and (max-width: 600px){
+  .modal{
+    padding-top: 75px;
+  }
+}
+
 /* Modal Content */
 .modal-content {
   position: relative;
@@ -496,6 +506,15 @@ body{
   animation-name: animatetop;
   animation-duration: 0.4s
 }
+
+@media screen and (max-width: 600px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
@@ -514,6 +533,12 @@ body{
   float: right;
   font-size: 28px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 600px){
+  .close{
+    font-size: 48px;
+  }
 }
 
 .close:hover,
@@ -540,6 +565,28 @@ body{
   color: white;
 }
 
+.modal-text{
+  width: 75%;
+  margin: 0 auto;
+
+}
+
+@media screen and (max-width: 600px) {
+  .modal-text {
+    width: 90%;
+  }
+}
+
+.modal-image{
+  width: 50%;
+}
+
+@media screen and (max-width: 600px){
+  .modal-image {
+    width: 100%;
+  }
+}
+
 
 
 
@@ -549,6 +596,12 @@ body{
   float: right;
   font-size: 28px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 600px){
+  .close2{
+    font-size: 48px;
+  }
 }
 
 .close2:hover,
@@ -567,6 +620,12 @@ body{
   font-weight: bold;
 }
 
+@media screen and (max-width: 600px){
+  .close3{
+    font-size: 48px;
+  }
+}
+
 .close3:hover,
 .close3:focus {
   color: #000;
@@ -580,6 +639,12 @@ body{
   float: right;
   font-size: 28px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 600px){
+  .close4{
+    font-size: 48px;
+  }
 }
 
 .close4:hover,
