@@ -203,6 +203,20 @@ body{
 
 /* Timeline Section Styling */
 
+.button {
+  background-color: #0892d0;
+  border: none;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
+  /* margin: 2px 1px; */
+  cursor: pointer;
+}
+
 
 .card-title{
   font-size: 24px;
@@ -440,6 +454,8 @@ body{
 
 .portfolio-container{
   position: relative;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* border-radius: 6px; */
   /* width: 100%; */
   /* height: auto; */
   cursor: pointer;
